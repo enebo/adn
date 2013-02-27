@@ -55,7 +55,7 @@ describe ADN::Post do
 
   describe "details" do
     it "returns the details for the post" do
-      post.details.keys.must_equal [
+      post.details.keys.sort.must_equal [
         "created_at", "entities", "html",
         "id", "num_replies", "reply_to",
         "source", "text", "thread_id", "user"
